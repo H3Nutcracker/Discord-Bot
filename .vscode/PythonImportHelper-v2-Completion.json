@@ -1,0 +1,74 @@
+[
+    {
+        "label": "discord",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "discord",
+        "description": "discord",
+        "detail": "discord",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "MyClient",
+        "kind": 6,
+        "importPath": "AyuwokiBot",
+        "description": "AyuwokiBot",
+        "peekOfCode": "class MyClient(discord.Client):\n    async def on_ready(self):\n        print('Logged on as {0}!'.format(self.user))\n    async def on_message(self, message):\n        if message.author == self.user:\n            return\n        if message.content.startswith('$meme'):\n            await message.channel.send(get_meme())\nintents = discord.Intents.default()\nintents.message_content = True",
+        "detail": "AyuwokiBot",
+        "documentation": {}
+    },
+    {
+        "label": "get_meme",
+        "kind": 2,
+        "importPath": "AyuwokiBot",
+        "description": "AyuwokiBot",
+        "peekOfCode": "def get_meme():\n    response = requests.get('https://meme-api.com/gimme')\n    json_data = json.loads(response.text)\n    return json_data['url']\nclass MyClient(discord.Client):\n    async def on_ready(self):\n        print('Logged on as {0}!'.format(self.user))\n    async def on_message(self, message):\n        if message.author == self.user:\n            return",
+        "detail": "AyuwokiBot",
+        "documentation": {}
+    },
+    {
+        "label": "intents",
+        "kind": 5,
+        "importPath": "AyuwokiBot",
+        "description": "AyuwokiBot",
+        "peekOfCode": "intents = discord.Intents.default()\nintents.message_content = True\nclient = MyClient(intents=intents)\nclient.run('MTI2MDE1Nzc3OTAxNzIwNzk2MA.GMiKiv.KjINbTBZKpDE5f0jMkR3_QRPjQCueMImIOSHXI')",
+        "detail": "AyuwokiBot",
+        "documentation": {}
+    },
+    {
+        "label": "intents.message_content",
+        "kind": 5,
+        "importPath": "AyuwokiBot",
+        "description": "AyuwokiBot",
+        "peekOfCode": "intents.message_content = True\nclient = MyClient(intents=intents)\nclient.run('MTI2MDE1Nzc3OTAxNzIwNzk2MA.GMiKiv.KjINbTBZKpDE5f0jMkR3_QRPjQCueMImIOSHXI')",
+        "detail": "AyuwokiBot",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "AyuwokiBot",
+        "description": "AyuwokiBot",
+        "peekOfCode": "client = MyClient(intents=intents)\nclient.run('MTI2MDE1Nzc3OTAxNzIwNzk2MA.GMiKiv.KjINbTBZKpDE5f0jMkR3_QRPjQCueMImIOSHXI')",
+        "detail": "AyuwokiBot",
+        "documentation": {}
+    }
+]
