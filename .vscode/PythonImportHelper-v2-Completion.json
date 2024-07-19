@@ -49,7 +49,7 @@
         "kind": 5,
         "importPath": "AyuwokiBot",
         "description": "AyuwokiBot",
-        "peekOfCode": "intents = discord.Intents.default()\nintents.message_content = True\nclient = MyClient(intents=intents)\nclient.run('MTI2MDE1Nzc3OTAxNzIwNzk2MA.GMiKiv.KjINbTBZKpDE5f0jMkR3_QRPjQCueMImIOSHXI')",
+        "peekOfCode": "intents = discord.Intents.default()\nintents.message_content = True\nclient = MyClient(intents = intents)\nclient.run('MTI2MDE1Nzc3OTAxNzIwNzk2MA.GMiKiv.KjINbTBZKpDE5f0jMkR3_QRPjQCueMImIOSHXI')",
         "detail": "AyuwokiBot",
         "documentation": {}
     },
@@ -58,7 +58,7 @@
         "kind": 5,
         "importPath": "AyuwokiBot",
         "description": "AyuwokiBot",
-        "peekOfCode": "intents.message_content = True\nclient = MyClient(intents=intents)\nclient.run('MTI2MDE1Nzc3OTAxNzIwNzk2MA.GMiKiv.KjINbTBZKpDE5f0jMkR3_QRPjQCueMImIOSHXI')",
+        "peekOfCode": "intents.message_content = True\nclient = MyClient(intents = intents)\nclient.run('MTI2MDE1Nzc3OTAxNzIwNzk2MA.GMiKiv.KjINbTBZKpDE5f0jMkR3_QRPjQCueMImIOSHXI')",
         "detail": "AyuwokiBot",
         "documentation": {}
     },
@@ -67,7 +67,7 @@
         "kind": 5,
         "importPath": "AyuwokiBot",
         "description": "AyuwokiBot",
-        "peekOfCode": "client = MyClient(intents=intents)\nclient.run('MTI2MDE1Nzc3OTAxNzIwNzk2MA.GMiKiv.KjINbTBZKpDE5f0jMkR3_QRPjQCueMImIOSHXI')",
+        "peekOfCode": "client = MyClient(intents = intents)\nclient.run('MTI2MDE1Nzc3OTAxNzIwNzk2MA.GMiKiv.KjINbTBZKpDE5f0jMkR3_QRPjQCueMImIOSHXI')",
         "detail": "AyuwokiBot",
         "documentation": {}
     }
